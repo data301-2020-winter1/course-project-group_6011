@@ -9,24 +9,10 @@ Details for Milestone are available on Canvas (left sidebar, Course Project) or 
 
 ## Describe your topic/interest in about 150-200 words
 
-What do you hope to do with your analytics project?
-
-Why are you interested in this topic or dataset?
-
-Do you have any questions you specifically want to explore?
 
 
 ## Describe your dataset in about 150-200 words
 
-Who: Which company/agency/organization provided this data?
-
-What: What is in your data?
-
-When: When was your data collected (for example, for which years)?
-
-Why: What is the purpose of your dataset? Is it for transparency/accountability, public interest, fun, learning, etc…
-
-How: How was your data collected? Was it a human collecting the data? Historical records digitized? Server logs?
 
 ## Team Members
 
