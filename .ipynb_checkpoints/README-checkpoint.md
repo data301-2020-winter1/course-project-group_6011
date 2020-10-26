@@ -9,13 +9,11 @@ Details for Milestone are available on Canvas (left sidebar, Course Project) or 
 
 ## Describe your topic/interest in about 150-200 words
 
-
+{Add your stuff here}
 
 ## Describe your dataset in about 150-200 words
 
-The data in the dataset was provided by a kaggle user who used a scraper to collect the data from craigslist.
-The data contains information about every  used vehicle listed on craigslist such as make,model,year,colour,ect.
--Ferdinand
+{Add your stuff here}
 
 ## Team Members
 
@@ -25,4 +23,4 @@ The data contains information about every  used vehicle listed on craigslist suc
 
 ## References
 
-Link to dataset on kaggle -> https://www.kaggle.com/austinreese/craigslist-carstrucks-data
+{Add your stuff here}
