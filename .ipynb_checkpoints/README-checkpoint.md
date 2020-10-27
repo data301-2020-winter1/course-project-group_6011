@@ -10,10 +10,27 @@ Details for Milestone are available on Canvas (left sidebar, Course Project) or 
 ## Describe your topic/interest in about 150-200 words
 
 
+I hope to do some interesting data analytics, perhaps find some patterns in the data. As of right now I dont really know what I hope to do with the project.
+This was not my original dataset of choice, but I ended up with this one because my original dataset was too large.
+The chosen dataset contains interesting data about adults, such as age,sex,income,profession,ect.
+As of right now I do not have any specific questions because I have not looked at the data enough.
 
 ## Describe your dataset in about 150-200 words
 
-
+Who: Which company/agency/organization provided this data?
+    UCI Center for Machine Learning and Intelligent Systems
+    
+What: What is in your data?
+    A list of 32559 people's age,workclass,education,marital status,occupation,relationship,race,sex,hours per week,native country. 
+    
+When: When was your data collected (for example, for which years)?
+    1996/05/01
+    
+Why: What is the purpose of your dataset? Is it for transparency/accountability, public interest, fun, learning, etc…
+    This dataset is primarily for learning as it is cited in many academic papers.
+    
+How: How was your data collected? Was it a human collecting the data? Historical records digitized? Server logs?
+    The data was collected from the census database.
 ## Team Members
 
 - Ferdinand: I am a computer science major
