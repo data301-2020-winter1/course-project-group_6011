@@ -21,7 +21,7 @@ Details for Milestone are available on Canvas (left sidebar, Course Project) or 
 
 - Ferdinand: I am a computer science major
 - Wilson: I'm doing a computer science major and an econ minor.
-- Person 3: one sentence about you!
+- Person 3: I am business management major 
 
 ## References
 
