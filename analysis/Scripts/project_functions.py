@@ -7,4 +7,15 @@ def load_and_proccess(rawData):
     df1 = (rawData.drop(columns = ['fnlwgt','Education-Num',]))
     
     return df1
-    
+
+def describedf(data):
+    return data.describe()
+
+def nuniquedf(data):
+    return data.nunique(axis=0)
+
+def columnsdf(data):
+    return data.columns
+
+def shapedf(data)
+    return data.shape
