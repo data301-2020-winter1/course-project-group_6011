@@ -17,5 +17,5 @@ def nuniquedf(data):
 def columnsdf(data):
     return data.columns
 
-def shapedf(data)
+def shapedf(data):
     return data.shape
