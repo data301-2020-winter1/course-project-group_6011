@@ -1,0 +1,1025 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.1110.1623                               -->
+<workbook source-build='2020.3.3 (20203.20.1110.1623)' source-platform='win' version='18.1' xml:base='https://us-west-2b.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='Lab10' path='/t/data301lab10/workbooks' revision='1.0' site='data301lab10' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Age (bin) (copy) Parameter 2' datatype='real' name='[Age (bin) (copy) Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='10.0'>
+        <calculation class='tableau' formula='10.0' />
+        <range granularity='3.6500000000000004' max='70.0' min='10.0' />
+      </column>
+      <column caption='Age (bin) (copy) Parameter' datatype='real' name='[Age (bin) (copy) Parameter]' param-domain-type='range' role='measure' type='quantitative' value='10.950000000000001'>
+        <calculation class='tableau' formula='10.950000000000001' />
+        <range granularity='3.6500000000000004' max='18.25' min='3.6500000000000004' />
+      </column>
+    </datasource>
+    <datasource caption='processed dataset' inline='true' name='federated.1he6tdz0higylg19mhqo711ij92h' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='processed dataset' name='textscan.0qtfl5o0vatntk1c71kz10v81nv3'>
+            <connection class='textscan' directory='C:/Users/wilso/Documents/GitHub/course-project-group_6011/data/processed' filename='processed dataset.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0qtfl5o0vatntk1c71kz10v81nv3' name='processed dataset.csv' table='[processed dataset#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='Age' ordinal='1' />
+            <column datatype='string' name='Workclass' ordinal='2' />
+            <column datatype='integer' name='fnlwgt' ordinal='3' />
+            <column datatype='string' name='Education' ordinal='4' />
+            <column datatype='integer' name='Education-Num' ordinal='5' />
+            <column datatype='string' name='Marital-Status' ordinal='6' />
+            <column datatype='string' name='Occupation' ordinal='7' />
+            <column datatype='string' name='Realtionship' ordinal='8' />
+            <column datatype='string' name='Race' ordinal='9' />
+            <column datatype='string' name='Sex' ordinal='10' />
+            <column datatype='integer' name='Capital-Gain' ordinal='11' />
+            <column datatype='integer' name='Capital-Loss' ordinal='12' />
+            <column datatype='integer' name='Hours-Per-Week' ordinal='13' />
+            <column datatype='string' name='Native-Country' ordinal='14' />
+            <column datatype='string' name='Income' ordinal='15' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0qtfl5o0vatntk1c71kz10v81nv3' name='processed dataset.csv' table='[processed dataset#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='Age' ordinal='1' />
+            <column datatype='string' name='Workclass' ordinal='2' />
+            <column datatype='integer' name='fnlwgt' ordinal='3' />
+            <column datatype='string' name='Education' ordinal='4' />
+            <column datatype='integer' name='Education-Num' ordinal='5' />
+            <column datatype='string' name='Marital-Status' ordinal='6' />
+            <column datatype='string' name='Occupation' ordinal='7' />
+            <column datatype='string' name='Realtionship' ordinal='8' />
+            <column datatype='string' name='Race' ordinal='9' />
+            <column datatype='string' name='Sex' ordinal='10' />
+            <column datatype='integer' name='Capital-Gain' ordinal='11' />
+            <column datatype='integer' name='Capital-Loss' ordinal='12' />
+            <column datatype='integer' name='Hours-Per-Week' ordinal='13' />
+            <column datatype='string' name='Native-Country' ordinal='14' />
+            <column datatype='string' name='Income' ordinal='15' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[processed dataset.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[processed dataset.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed dataset.csv_F98830458A66435F92CA3E7BCEBC9958]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[processed dataset.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed dataset.csv_F98830458A66435F92CA3E7BCEBC9958]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Workclass</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Workclass]</local-name>
+            <parent-name>[processed dataset.csv]</parent-name>
+            <remote-alias>Workclass</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed dataset.csv_F98830458A66435F92CA3E7BCEBC9958]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fnlwgt</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fnlwgt]</local-name>
+            <parent-name>[processed dataset.csv]</parent-name>
+            <remote-alias>fnlwgt</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed dataset.csv_F98830458A66435F92CA3E7BCEBC9958]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Education</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Education]</local-name>
+            <parent-name>[processed dataset.csv]</parent-name>
+            <remote-alias>Education</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed dataset.csv_F98830458A66435F92CA3E7BCEBC9958]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Education-Num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Education-Num]</local-name>
+            <parent-name>[processed dataset.csv]</parent-name>
+            <remote-alias>Education-Num</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed dataset.csv_F98830458A66435F92CA3E7BCEBC9958]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Marital-Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Marital-Status]</local-name>
+            <parent-name>[processed dataset.csv]</parent-name>
+            <remote-alias>Marital-Status</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed dataset.csv_F98830458A66435F92CA3E7BCEBC9958]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Occupation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Occupation]</local-name>
+            <parent-name>[processed dataset.csv]</parent-name>
+            <remote-alias>Occupation</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed dataset.csv_F98830458A66435F92CA3E7BCEBC9958]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Realtionship</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Realtionship]</local-name>
+            <parent-name>[processed dataset.csv]</parent-name>
+            <remote-alias>Realtionship</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed dataset.csv_F98830458A66435F92CA3E7BCEBC9958]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Race</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Race]</local-name>
+            <parent-name>[processed dataset.csv]</parent-name>
+            <remote-alias>Race</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed dataset.csv_F98830458A66435F92CA3E7BCEBC9958]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sex</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sex]</local-name>
+            <parent-name>[processed dataset.csv]</parent-name>
+            <remote-alias>Sex</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed dataset.csv_F98830458A66435F92CA3E7BCEBC9958]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Capital-Gain</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Capital-Gain]</local-name>
+            <parent-name>[processed dataset.csv]</parent-name>
+            <remote-alias>Capital-Gain</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed dataset.csv_F98830458A66435F92CA3E7BCEBC9958]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Capital-Loss</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Capital-Loss]</local-name>
+            <parent-name>[processed dataset.csv]</parent-name>
+            <remote-alias>Capital-Loss</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed dataset.csv_F98830458A66435F92CA3E7BCEBC9958]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hours-Per-Week</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hours-Per-Week]</local-name>
+            <parent-name>[processed dataset.csv]</parent-name>
+            <remote-alias>Hours-Per-Week</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed dataset.csv_F98830458A66435F92CA3E7BCEBC9958]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Native-Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Native-Country]</local-name>
+            <parent-name>[processed dataset.csv]</parent-name>
+            <remote-alias>Native-Country</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed dataset.csv_F98830458A66435F92CA3E7BCEBC9958]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Income</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Income]</local-name>
+            <parent-name>[processed dataset.csv]</parent-name>
+            <remote-alias>Income</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed dataset.csv_F98830458A66435F92CA3E7BCEBC9958]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' caption='Age Group' datatype='integer' name='[Age (bin) (copy)_1156580734045601792]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='1' formula='[Age]' peg='0' size='10' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[Age (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[Age]' peg='0' size='2' />
+      </column>
+      <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+      <column aggregation='None' datatype='integer' name='[Education-Num (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[Education-Num]' peg='0' size='1' />
+      </column>
+      <column datatype='integer' name='[Education-Num]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Native-Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Race]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='processed dataset.csv' datatype='table' name='[__tableau_internal_object_id__].[processed dataset.csv_F98830458A66435F92CA3E7BCEBC9958]' role='measure' type='quantitative' />
+      <column caption='Fnlwgt' datatype='integer' name='[fnlwgt]' role='measure' type='quantitative' />
+      <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):ok]' pivot='key' type='ordinal' />
+      <group caption='Action (Age (bin))' hidden='true' name='[Action (Age (bin))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Age (bin):ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Race)' hidden='true' name='[Action (Race)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Race]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='processed dataset.csv' id='processed dataset.csv_F98830458A66435F92CA3E7BCEBC9958'>
+            <properties context=''>
+              <relation connection='textscan.0qtfl5o0vatntk1c71kz10v81nv3' name='processed dataset.csv' table='[processed dataset#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='Age' ordinal='1' />
+                  <column datatype='string' name='Workclass' ordinal='2' />
+                  <column datatype='integer' name='fnlwgt' ordinal='3' />
+                  <column datatype='string' name='Education' ordinal='4' />
+                  <column datatype='integer' name='Education-Num' ordinal='5' />
+                  <column datatype='string' name='Marital-Status' ordinal='6' />
+                  <column datatype='string' name='Occupation' ordinal='7' />
+                  <column datatype='string' name='Realtionship' ordinal='8' />
+                  <column datatype='string' name='Race' ordinal='9' />
+                  <column datatype='string' name='Sex' ordinal='10' />
+                  <column datatype='integer' name='Capital-Gain' ordinal='11' />
+                  <column datatype='integer' name='Capital-Loss' ordinal='12' />
+                  <column datatype='integer' name='Hours-Per-Week' ordinal='13' />
+                  <column datatype='string' name='Native-Country' ordinal='14' />
+                  <column datatype='string' name='Income' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='EDA_Results' type='sheet' worksheet='EDA_2' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='EDA_Results' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='EDA_Results' type='sheet' worksheet='EDA_1' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='EDA_Results' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Research_Results' type='sheet' worksheet='Research_1' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Research_Results' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='EDA_1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Histogram of age values</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='processed dataset' name='federated.1he6tdz0higylg19mhqo711ij92h' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1he6tdz0higylg19mhqo711ij92h'>
+            <column aggregation='None' datatype='integer' name='[Age (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[Age]' peg='0' size='2' />
+            </column>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column-instance column='[Age]' derivation='Count' name='[cnt:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#72b966' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1he6tdz0higylg19mhqo711ij92h].[cnt:Age:qk]</rows>
+        <cols>[federated.1he6tdz0higylg19mhqo711ij92h].[none:Age (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.1he6tdz0higylg19mhqo711ij92h].[Age (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{859799CE-F9EC-4AB4-A14D-4AA11730DA56}' />
+    </worksheet>
+    <worksheet name='EDA_2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Historam of Education-Num</run>
+            <run>Æ&#10;</run>
+            <run bold='true'>higher = more education</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='processed dataset' name='federated.1he6tdz0higylg19mhqo711ij92h' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1he6tdz0higylg19mhqo711ij92h'>
+            <column aggregation='None' datatype='integer' name='[Age (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[Age]' peg='0' size='2' />
+            </column>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column aggregation='None' datatype='integer' name='[Education-Num (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[Education-Num]' peg='0' size='1' />
+            </column>
+            <column datatype='integer' name='[Education-Num]' role='dimension' type='ordinal' />
+            <column-instance column='[Education-Num]' derivation='Count' name='[cnt:Education-Num:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Education-Num (bin)]' derivation='None' name='[none:Education-Num (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1he6tdz0higylg19mhqo711ij92h].[Action (Age (bin))]'>
+            <groupfilter function='member' level='[none:Age (bin):ok]' member='17' user:ui-action-filter='[Action2]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1he6tdz0higylg19mhqo711ij92h].[Action (Age (bin))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#75a1c7' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1he6tdz0higylg19mhqo711ij92h].[cnt:Education-Num:qk]</rows>
+        <cols>[federated.1he6tdz0higylg19mhqo711ij92h].[none:Education-Num (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.1he6tdz0higylg19mhqo711ij92h].[Education-Num (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{B2360435-5DA0-4CF4-BCD7-E0F7185D5C09}' />
+    </worksheet>
+    <worksheet name='EDA_3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Historam of races</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='processed dataset' name='federated.1he6tdz0higylg19mhqo711ij92h' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1he6tdz0higylg19mhqo711ij92h'>
+            <column aggregation='None' datatype='integer' name='[Age (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[Age]' peg='0' size='2' />
+            </column>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Race]' role='dimension' type='nominal' />
+            <column-instance column='[Race]' derivation='Count' name='[cnt:Race:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Race]' derivation='None' name='[none:Race:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1he6tdz0higylg19mhqo711ij92h].[Action (Age (bin))]'>
+            <groupfilter function='member' level='[none:Age (bin):ok]' member='17' user:ui-action-filter='[Action2]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1he6tdz0higylg19mhqo711ij92h].[Action (Age (bin))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#76b7b2' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1he6tdz0higylg19mhqo711ij92h].[cnt:Race:qk]</rows>
+        <cols>[federated.1he6tdz0higylg19mhqo711ij92h].[none:Race:nk]</cols>
+      </table>
+      <simple-id uuid='{9A95208C-16DF-45A2-B463-8145CD64821E}' />
+    </worksheet>
+    <worksheet name='Research_1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Average education level by race</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='processed dataset' name='federated.1he6tdz0higylg19mhqo711ij92h' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1he6tdz0higylg19mhqo711ij92h'>
+            <column datatype='integer' name='[Education-Num]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Race]' role='dimension' type='nominal' />
+            <column-instance column='[Education-Num]' derivation='Avg' name='[avg:Education-Num:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Race]' derivation='None' name='[none:Race:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#76b7b2' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1he6tdz0higylg19mhqo711ij92h].[avg:Education-Num:qk]</rows>
+        <cols>[federated.1he6tdz0higylg19mhqo711ij92h].[none:Race:nk]</cols>
+      </table>
+      <simple-id uuid='{17B6345E-3AB6-4359-A231-E86E5F1662CE}' />
+    </worksheet>
+    <worksheet name='Research_2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Average education level by age group</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='processed dataset' name='federated.1he6tdz0higylg19mhqo711ij92h' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1he6tdz0higylg19mhqo711ij92h'>
+            <column aggregation='None' caption='Age Group' datatype='integer' name='[Age (bin) (copy)_1156580734045601792]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='1' formula='[Age]' peg='0' size='10' />
+            </column>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Education-Num]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Race]' role='dimension' type='nominal' />
+            <column-instance column='[Education-Num]' derivation='Avg' name='[avg:Education-Num:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age (bin) (copy)_1156580734045601792]' derivation='None' name='[none:Age (bin) (copy)_1156580734045601792:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1he6tdz0higylg19mhqo711ij92h].[Action (Race)]'>
+            <groupfilter function='member' level='[Race]' member='&quot;Amer-Indian-Eskimo&quot;' user:ui-action-filter='[Action3]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1he6tdz0higylg19mhqo711ij92h].[Action (Race)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#ba9582' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1he6tdz0higylg19mhqo711ij92h].[avg:Education-Num:qk]</rows>
+        <cols>[federated.1he6tdz0higylg19mhqo711ij92h].[none:Age (bin) (copy)_1156580734045601792:qk]</cols>
+      </table>
+      <simple-id uuid='{69CAA60D-D75A-46E2-A93F-E304AE13EE22}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='EDA_Results'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>EDA RESULTS</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='6' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97298' id='11' param='vert' w='98614' x='693' y='1351'>
+            <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='6925' id='12' w='98614' x='693' y='1351'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='90373' id='9' w='98614' x='693' y='8276'>
+              <zone h='45185' id='5' name='EDA_1' w='49307' x='50000' y='8276'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='90373' id='7' name='EDA_2' w='49307' x='693' y='8276'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='45188' id='8' name='EDA_3' w='49307' x='50000' y='53461'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true'>EDA RESULTS</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='950' minheight='950' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='20' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98726' id='19' param='vert' w='98938' x='531' y='637'>
+                <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='3266' id='12' w='98938' x='531' y='637'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='95460' id='7' is-fixed='true' name='EDA_2' w='49469' x='531' y='3903'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47730' id='5' is-fixed='true' name='EDA_1' w='49469' x='50000' y='3903'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47730' id='8' is-fixed='true' name='EDA_3' w='49469' x='50000' y='51633'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D699121B-9F0D-49DF-A070-B727ADB9C0A8}' />
+    </dashboard>
+    <dashboard name='Research_Results'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>How do factors like age and race affect education level?</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='96544' id='15' param='vert' w='98034' x='983' y='1728'>
+            <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='8855' id='16' w='98034' x='983' y='1728'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='87689' id='13' w='98034' x='983' y='10583'>
+              <zone h='87689' id='5' name='Research_2' w='49017' x='983' y='10583'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='87689' id='6' name='Research_1' w='49017' x='50000' y='10583'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true'>How do factors like age and race affect education level?</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='20' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98726' id='19' param='vert' w='99076' x='462' y='637'>
+                <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='3266' id='16' w='99076' x='462' y='637'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='95460' id='5' is-fixed='true' name='Research_2' w='49538' x='462' y='3903'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='95460' id='6' is-fixed='true' name='Research_1' w='49538' x='50000' y='3903'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{0591C2C7-07CE-4B1E-9E59-043B5315B4E9}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='EDA_1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F881576F-9974-4D35-AFA2-E797CD60BC06}' />
+    </window>
+    <window class='worksheet' name='EDA_2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{97040E95-9BA7-428B-B61A-0B05F38EA6A8}' />
+    </window>
+    <window class='worksheet' name='EDA_3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3D0F92DE-BD53-4595-A1F3-4156BA52DA35}' />
+    </window>
+    <window class='dashboard' name='EDA_Results'>
+      <viewpoints>
+        <viewpoint name='EDA_1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='EDA_2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='EDA_3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='8' />
+      <simple-id uuid='{2B9C0BED-B632-4806-B81F-6CD68AC944BA}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Research_1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CA0ABF6C-0D05-4F57-99C9-9E8C7226582C}' />
+    </window>
+    <window class='worksheet' name='Research_2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8C308537-1614-4476-8ECD-82EDF7118D76}' />
+    </window>
+    <window class='dashboard' name='Research_Results'>
+      <viewpoints>
+        <viewpoint name='Research_1' />
+        <viewpoint name='Research_2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='6' />
+      <simple-id uuid='{D03968BE-E1B7-4645-BF86-42509B401B93}' />
+    </window>
+  </windows>
+</workbook>
